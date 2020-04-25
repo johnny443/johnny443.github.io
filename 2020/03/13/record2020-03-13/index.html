@@ -20,19 +20,20 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="参考这篇文章花了一个下午研究怎么搭一个简单的静态博客，因为版本差异，中间也遇到了一些小问题，耗费了一些不必要的时间。 　　- 问题1：git组件需要手动更新　　根据指引输入对应代码即可解决（阅读能力很重要）。 　- 问题2：设置头像时文件名存储错误　　将avatar打成了avtar，浪费了一个小时搜索解决方案，以后程序出错应该第一时间排除这种低级错误。">
+  <meta name="description" content="封装数据库连接池 12345try:    # 创建mysql连接池    pool &#x3D; mysql.connector.pooling.MySQLConnection(**__config)except Exception as e:    print(e)  封装用户操作数据库类 123456789101112131415161718192021222324252627282930313233">
 <meta property="og:type" content="article">
-<meta property="og:title" content="利用hexo+git快速搭建博客">
-<meta property="og:url" content="http://yoursite.com/2019/09/23/%E5%88%A9%E7%94%A8hexo-git%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:title" content="log1 | 2020-03-13">
+<meta property="og:url" content="http://yoursite.com/2020/03/13/record2020-03-13/index.html">
 <meta property="og:site_name" content="小黑屋">
-<meta property="og:description" content="参考这篇文章花了一个下午研究怎么搭一个简单的静态博客，因为版本差异，中间也遇到了一些小问题，耗费了一些不必要的时间。 　　- 问题1：git组件需要手动更新　　根据指引输入对应代码即可解决（阅读能力很重要）。 　- 问题2：设置头像时文件名存储错误　　将avatar打成了avtar，浪费了一个小时搜索解决方案，以后程序出错应该第一时间排除这种低级错误。">
-<meta property="article:published_time" content="2019-09-23T11:40:40.000Z">
-<meta property="article:modified_time" content="2020-04-25T10:02:38.358Z">
+<meta property="og:description" content="封装数据库连接池 12345try:    # 创建mysql连接池    pool &#x3D; mysql.connector.pooling.MySQLConnection(**__config)except Exception as e:    print(e)  封装用户操作数据库类 123456789101112131415161718192021222324252627282930313233">
+<meta property="article:published_time" content="2020-03-13T01:30:51.000Z">
+<meta property="article:modified_time" content="2020-04-25T10:11:51.791Z">
 <meta property="article:author" content="Johnny">
-<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="mysql">
+<meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2019/09/23/%E5%88%A9%E7%94%A8hexo-git%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
+<link rel="canonical" href="http://yoursite.com/2020/03/13/record2020-03-13/">
 
 
 <script id="page-configurations">
@@ -44,7 +45,7 @@
   };
 </script>
 
-  <title>利用hexo+git快速搭建博客 | 小黑屋</title>
+  <title>log1 | 2020-03-13 | 小黑屋</title>
   
 
 
@@ -164,7 +165,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-Hans">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/23/%E5%88%A9%E7%94%A8hexo-git%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/13/record2020-03-13/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -177,7 +178,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          利用hexo+git快速搭建博客
+          log1 | 2020-03-13
         </h1>
 
         <div class="post-meta">
@@ -187,7 +188,7 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2019-09-23 19:40:40" itemprop="dateCreated datePublished" datetime="2019-09-23T19:40:40+08:00">2019-09-23</time>
+              <time title="创建时间：2020-03-13 09:30:51" itemprop="dateCreated datePublished" datetime="2020-03-13T09:30:51+08:00">2020-03-13</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -195,7 +196,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a>
+                  <a href="/categories/dev-log/" itemprop="url" rel="index"><span itemprop="name">dev-log</span></a>
                 </span>
             </span>
 
@@ -205,14 +206,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>166</span>
+              <span>1.4k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -224,9 +225,18 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>　　<a href="http://www.cylong.com/blog/2016/04/19/hexo-git/" target="_blank" rel="noopener">参考这篇文章</a>花了一个下午研究怎么搭一个简单的静态博客，因为版本差异，中间也遇到了一些小问题，耗费了一些不必要的时间。</p>
-<p>　　- <strong>问题1：git组件需要手动更新</strong><br>　　根据指引输入对应代码即可解决（阅读能力很重要）。</p>
-<p>　- <strong>问题2：设置头像时文件名存储错误</strong><br>　　将avatar打成了avtar，浪费了一个小时搜索解决方案，以后程序出错应该第一时间排除这种低级错误。</p>
+        <p>封装数据库连接池</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    <span class="comment"># 创建mysql连接池</span></span><br><span class="line">    pool = mysql.connector.pooling.MySQLConnection(**__config)</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">    print(e)</span><br></pre></td></tr></table></figure>
+
+<p>封装用户操作数据库类</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> db.mysql_db <span class="keyword">import</span> pool</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">UserDao</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, **kwargs)</span>:</span></span><br><span class="line">        self.__username = <span class="number">123</span><span class="comment">#kwargs['username']</span></span><br><span class="line">        self.__password = <span class="number">123</span> <span class="comment">#kwargs['password']</span></span><br><span class="line">        self.__email = <span class="number">123</span> <span class="comment">#kwargs['email']</span></span><br><span class="line">        self.__phone = <span class="number">123</span> <span class="comment">#kwargs['phone']</span></span><br><span class="line">        self.__role_id = <span class="number">2</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__get_info</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> self.username, self.password, self.email, self.phone, self.role_id</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">sign_up</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            con = pool.get_connection()</span><br><span class="line">            cursor = con.cursor()</span><br><span class="line">            cursor.execute(</span><br><span class="line">                <span class="string">'INSERT user_info SET username=%s, password=%s,'</span></span><br><span class="line">                <span class="string">'email=%s, phone=%s, role_id=%s'</span>,</span><br><span class="line">                self.__get_info())</span><br><span class="line">        <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">            print(e)</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">        <span class="keyword">finally</span>:</span><br><span class="line">            <span class="keyword">if</span> <span class="string">"con"</span> <span class="keyword">in</span> dir():</span><br><span class="line">                con.close()</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">log_in</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            con = pool.get_connection()</span><br><span class="line">            cursor = con.cursor()</span><br><span class="line">            cursor.execute(<span class="string">'SELECT COUNT(*) FROM user_info'</span> </span><br><span class="line">                           <span class="string">'WHERE username=%s, password=%s'</span>,</span><br><span class="line">                           (self.__username, self.__password))</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span> <span class="keyword">if</span> cursor.fetchone()[<span class="number">0</span>] == <span class="number">1</span> <span class="keyword">else</span> <span class="literal">False</span></span><br><span class="line">        <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">            print(e)</span><br><span class="line">        <span class="keyword">finally</span>:</span><br><span class="line">            <span class="keyword">if</span> <span class="string">"con"</span> <span class="keyword">in</span> dir():</span><br><span class="line">                con.close()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    user = UserDao()</span><br><span class="line">    user.sign_up()</span><br></pre></td></tr></table></figure>
+
+<p>进行测试，运行返回错误</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x3D;&#x3D;&gt; &#39;MySQLConnection&#39; object has no attribute &#39;get_connection&#39;</span><br></pre></td></tr></table></figure>
+
+<p>排查错误，正确创建数据库连接池的方法应为MySQLConnectionPool：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    <span class="comment"># 创建mysql连接池</span></span><br><span class="line">    <span class="comment"># error --&gt; pool = mysql.connector.pooling.MySQLConnection(**__config)</span></span><br><span class="line">    pool = mysql.connector.pooling.MySQLConnectionPool(**__config)</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">    print(e)</span><br></pre></td></tr></table></figure>
+
 
     </div>
 
@@ -236,7 +246,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/hexo/" rel="tag"># hexo</a>
+              <a href="/tags/mysql/" rel="tag"># mysql</a>
+              <a href="/tags/Python/" rel="tag"># Python</a>
           </div>
 
         
@@ -244,10 +255,13 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2020/02/27/%E7%AC%AC4%E7%AB%A0-22%20%E6%89%BE%E9%9E%8D%E7%82%B9/" rel="next" title="第4章-22 找鞍点">
-      第4章-22 找鞍点 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/03/04/%E6%AD%A3%E5%88%99/" rel="prev" title="正则表达式语法">
+      <i class="fa fa-chevron-left"></i> 正则表达式语法
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/03/13/mysql%E7%AC%94%E8%AE%B0/" rel="next" title="mysql笔记">
+      mysql笔记 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>

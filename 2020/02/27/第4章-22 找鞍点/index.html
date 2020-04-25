@@ -27,9 +27,8 @@
 <meta property="og:site_name" content="小黑屋">
 <meta property="og:description" content="python实现找鞍点一个矩阵元素的“鞍点”是指该位置上的元素值在该行上最大、在该列上最小。">
 <meta property="article:published_time" content="2020-02-27T07:43:33.000Z">
-<meta property="article:modified_time" content="2020-02-28T16:11:54.725Z">
+<meta property="article:modified_time" content="2020-04-25T10:10:46.695Z">
 <meta property="article:author" content="Johnny">
-<meta property="article:tag" content="PTA">
 <meta property="article:tag" content="Python">
 <meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
@@ -191,24 +190,13 @@
 
               <time title="创建时间：2020-02-27 15:43:33" itemprop="dateCreated datePublished" datetime="2020-02-27T15:43:33+08:00">2020-02-27</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-02-29 00:11:54" itemprop="dateModified" datetime="2020-02-29T00:11:54+08:00">2020-02-29</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python/%E6%B5%99%E5%A4%A7%E7%89%88%E3%80%8APython%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E3%80%8B%E9%A2%98%E7%9B%AE%E9%9B%86/" itemprop="url" rel="index"><span itemprop="name">浙大版《Python程序设计》题目集</span></a>
+                  <a href="/categories/%E6%B5%99%E5%A4%A7%E7%89%88%E3%80%8APython%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E3%80%8B%E9%A2%98%E7%9B%AE%E9%9B%86/" itemprop="url" rel="index"><span itemprop="name">浙大版《Python程序设计》题目集</span></a>
                 </span>
             </span>
 
@@ -227,7 +215,7 @@
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
               <span>2 分钟</span>
             </span>
-            <div class="post-description"><center><b>python实现找鞍点</b></center><br/><center>一个矩阵元素的“鞍点”是指该位置上的元素值在该行上最大、在该列上最小。</center></div>
+            <div class="post-description"><center><h3>python实现找鞍点</h3></center><center>一个矩阵元素的“鞍点”是指该位置上的元素值在该行上最大、在该列上最小。</center></div>
 
         </div>
       </header>
@@ -238,8 +226,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><hr>
-<p>一个矩阵元素的“鞍点”是指该位置上的元素值在该行上最大、在该列上最小。本题要求编写程序，求一个给定的 <em>n</em> 阶方阵的鞍点。</p>
+        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>一个矩阵元素的“鞍点”是指该位置上的元素值在该行上最大、在该列上最小。本题要求编写程序，求一个给定的 <em>n</em> 阶方阵的鞍点。</p>
 <a id="more"></a>
 
 <p><strong>输入格式：</strong></p>
@@ -260,10 +247,8 @@
 
 
 
-<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><hr>
-<p>用一个二维数组保存输入的数据，然后找到每一行中的最大值所在的列，对比该值是否为所在列的最小值，若等于，则为鞍点。</p>
-<h3 id="code"><a href="#code" class="headerlink" title="code"></a>code</h3><hr>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">matrix = []</span><br><span class="line">point = <span class="string">'NONE'</span></span><br><span class="line"></span><br><span class="line">n = int(input())</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">    <span class="comment"># 用spilt()将带空格的字符串转为单个数字</span></span><br><span class="line">    num_list = input().split()</span><br><span class="line">    <span class="comment"># 将输入的n行数字转化为二维数组保存，方便查找最值</span></span><br><span class="line">    matrix.append([eval(num) <span class="keyword">for</span> num <span class="keyword">in</span> num_list])</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> row <span class="keyword">in</span> range(n):</span><br><span class="line">    point_row = <span class="number">0</span></span><br><span class="line">    point_col = <span class="number">0</span></span><br><span class="line">	<span class="comment"># 遍历该行，找到最大值以及其所在的列</span></span><br><span class="line">    row_max_num = matrix[row][<span class="number">0</span>]</span><br><span class="line">    <span class="keyword">for</span> search_col <span class="keyword">in</span> range(<span class="number">1</span>, n):</span><br><span class="line">        <span class="keyword">if</span> matrix[row][search_col] &gt;= row_max_num:</span><br><span class="line">            row_max_num = matrix[row][search_col]</span><br><span class="line">            point_col = search_col</span><br><span class="line">	<span class="comment"># 遍历该值所在列，找到该列最小值</span></span><br><span class="line">    col_min_num = matrix[<span class="number">0</span>][point_col]</span><br><span class="line">    <span class="keyword">for</span> search_row <span class="keyword">in</span> range(<span class="number">1</span>, n):</span><br><span class="line">        <span class="keyword">if</span> matrix[search_row][point_col] &lt;= col_min_num:</span><br><span class="line">            col_min_num = matrix[search_row][point_col]</span><br><span class="line">            point_row = search_row</span><br><span class="line">	<span class="comment"># 判断该行最大值是否等于该列最小值，若等于即找到鞍点</span></span><br><span class="line">    <span class="keyword">if</span> row_max_num == col_min_num:</span><br><span class="line">        point = <span class="string">'%d %d'</span> % (point_row, point_col)</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">continue</span></span><br><span class="line">print(point)</span><br></pre></td></tr></table></figure>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>用一个二维数组保存输入的数据，然后找到每一行中的最大值所在的列，对比该值是否为所在列的最小值，若等于，则为鞍点。</p>
+<h3 id="code"><a href="#code" class="headerlink" title="code"></a>code</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">matrix = []</span><br><span class="line">point = <span class="string">'NONE'</span></span><br><span class="line"></span><br><span class="line">n = int(input())</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">    <span class="comment"># 用spilt()将带空格的字符串转为单个数字</span></span><br><span class="line">    num_list = input().split()</span><br><span class="line">    <span class="comment"># 将输入的n行数字转化为二维数组保存，方便查找最值</span></span><br><span class="line">    matrix.append([eval(num) <span class="keyword">for</span> num <span class="keyword">in</span> num_list])</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> row <span class="keyword">in</span> range(n):</span><br><span class="line">    point_row = <span class="number">0</span></span><br><span class="line">    point_col = <span class="number">0</span></span><br><span class="line">	<span class="comment"># 遍历该行，找到最大值以及其所在的列</span></span><br><span class="line">    row_max_num = matrix[row][<span class="number">0</span>]</span><br><span class="line">    <span class="keyword">for</span> search_col <span class="keyword">in</span> range(<span class="number">1</span>, n):</span><br><span class="line">        <span class="keyword">if</span> matrix[row][search_col] &gt;= row_max_num:</span><br><span class="line">            row_max_num = matrix[row][search_col]</span><br><span class="line">            point_col = search_col</span><br><span class="line">	<span class="comment"># 遍历该值所在列，找到该列最小值</span></span><br><span class="line">    col_min_num = matrix[<span class="number">0</span>][point_col]</span><br><span class="line">    <span class="keyword">for</span> search_row <span class="keyword">in</span> range(<span class="number">1</span>, n):</span><br><span class="line">        <span class="keyword">if</span> matrix[search_row][point_col] &lt;= col_min_num:</span><br><span class="line">            col_min_num = matrix[search_row][point_col]</span><br><span class="line">            point_row = search_row</span><br><span class="line">	<span class="comment"># 判断该行最大值是否等于该列最小值，若等于即找到鞍点</span></span><br><span class="line">    <span class="keyword">if</span> row_max_num == col_min_num:</span><br><span class="line">        point = <span class="string">'%d %d'</span> % (point_row, point_col)</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">continue</span></span><br><span class="line">print(point)</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -272,7 +257,6 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/PTA/" rel="tag"># PTA</a>
               <a href="/tags/Python/" rel="tag"># Python</a>
               <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"># 算法</a>
           </div>
@@ -283,10 +267,13 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/02/27/Python%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/" rel="prev" title="Python字符串常用方法">
-      <i class="fa fa-chevron-left"></i> Python字符串常用方法
+    <a href="/2019/09/23/%E5%88%A9%E7%94%A8hexo-git%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" rel="prev" title="利用hexo+git快速搭建博客">
+      <i class="fa fa-chevron-left"></i> 利用hexo+git快速搭建博客
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2020/03/04/%E6%AD%A3%E5%88%99/" rel="next" title="正则表达式语法">
+      正则表达式语法 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -362,7 +349,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">9</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -375,7 +362,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -409,7 +396,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">2k</span>
+    <span title="站点总字数">7k</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动
   </div>

@@ -161,7 +161,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/27/%E7%AC%AC4%E7%AB%A0-22%20%E6%89%BE%E9%9E%8D%E7%82%B9/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/02/vim%E6%93%8D%E4%BD%9C%E6%96%B9%E5%BC%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -175,7 +175,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2020/02/27/%E7%AC%AC4%E7%AB%A0-22%20%E6%89%BE%E9%9E%8D%E7%82%B9/" class="post-title-link" itemprop="url">第4章-22 找鞍点</a>
+            <a href="/2020/04/02/vim%E6%93%8D%E4%BD%9C%E6%96%B9%E5%BC%8F/" class="post-title-link" itemprop="url">vim编辑器</a>
         </h1>
 
         <div class="post-meta">
@@ -185,26 +185,15 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-02-27 15:43:33" itemprop="dateCreated datePublished" datetime="2020-02-27T15:43:33+08:00">2020-02-27</time>
+              <time title="创建时间：2020-04-02 11:18:42" itemprop="dateCreated datePublished" datetime="2020-04-02T11:18:42+08:00">2020-04-02</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-02-29 00:11:54" itemprop="dateModified" datetime="2020-02-29T00:11:54+08:00">2020-02-29</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python/%E6%B5%99%E5%A4%A7%E7%89%88%E3%80%8APython%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E3%80%8B%E9%A2%98%E7%9B%AE%E9%9B%86/" itemprop="url" rel="index"><span itemprop="name">浙大版《Python程序设计》题目集</span></a>
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a>
                 </span>
             </span>
 
@@ -214,7 +203,167 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1k</span>
+              <span>526</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>vim编辑器是功能强大的跨平台文件编辑工具，继承自unix系统的vi编辑器，支持Linux/Mac OS/Windows系统，利用它可以建立、修改文本文件。</p>
+<h2 id="模式"><a href="#模式" class="headerlink" title="模式"></a>模式</h2><h3 id="编辑模式（命令模式）"><a href="#编辑模式（命令模式）" class="headerlink" title="编辑模式（命令模式）"></a>编辑模式（命令模式）</h3><ul>
+<li>打开一个文件是就是编辑模式</li>
+</ul>
+<h3 id="输入模式"><a href="#输入模式" class="headerlink" title="输入模式"></a>输入模式</h3><ul>
+<li><kbd>i</kbd>: 进入输入模式</li>
+<li><kbd>esc</kbd>: 变成编辑模式</li>
+</ul>
+<h3 id="末行模式"><a href="#末行模式" class="headerlink" title="末行模式"></a>末行模式</h3><ul>
+<li>在编辑模式下键入冒号: <kbd>shift</kbd>+<kbd>:</kbd>进入末行模式</li>
+<li><kbd>w</kbd>: 表示写入</li>
+<li><kbd>q</kbd>: 表示退出</li>
+<li><kbd>w</kbd><kbd>q</kbd>: 表示保存并退出</li>
+<li><kbd>esc</kbd>: 退出末行模式，变成编辑模式 </li>
+</ul>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>在root权限下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install vim</span><br></pre></td></tr></table></figure>
+
+<h2 id="操作方式"><a href="#操作方式" class="headerlink" title="操作方式"></a>操作方式</h2><ul>
+<li><p>打开文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim [文件名]</span><br></pre></td></tr></table></figure>
+
+<p>若文件不存在，则会新建一个文件。</p>
+</li>
+<li><p>vim常用命令</p>
+<blockquote>
+<p><strong>注：区分大小写</strong></p>
+</blockquote>
+<ul>
+<li><p><kbd>i</kbd>：是在当前光标所在处前面输入文字</p>
+</li>
+<li><p><kbd>a</kbd>：是在当前光标所在后面插入文字</p>
+</li>
+<li><p><kbd>o</kbd>：代表在当前光标所在行的下一行插入文字</p>
+</li>
+<li><p><kbd>I</kbd>：代表在当前行的行首输入文字</p>
+</li>
+<li><p><kbd>A</kbd>：代表在当前行的行尾输入文字</p>
+</li>
+<li><p><kbd>O</kbd>：在当前行的上一行输入文字</p>
+</li>
+<li><p><kbd>x</kbd>：删除后面的字符</p>
+</li>
+<li><p><kbd>X</kbd>：退格</p>
+</li>
+<li><p><kbd>d</kbd><kbd>d</kbd>：删除（剪切）一行</p>
+</li>
+<li><p><kbd>1-9</kbd> + <kbd>d</kbd><kbd>d</kbd>：删除多行</p>
+</li>
+<li><p><kbd>p</kbd>：粘贴</p>
+</li>
+<li><p><kbd>P</kbd>：在当前行的上面粘贴</p>
+</li>
+<li><p><kbd>y</kbd><kbd>y</kbd>：复制一行</p>
+</li>
+<li><p><kbd>1-9</kbd> + <kbd>y</kbd><kbd>y</kbd>：复制多行</p>
+</li>
+<li><p><kbd>G</kbd>：跳至末行</p>
+</li>
+<li><p><kbd>g</kbd><kbd>g</kbd>：跳至行首</p>
+</li>
+<li><p><kbd>r</kbd>：代表替换，替换单个字符，一个字母</p>
+</li>
+<li><p><kbd>u</kbd>：代表撤回</p>
+</li>
+<li><p><kbd>.</kbd>：代表重复上一次操作</p>
+</li>
+<li><p><kbd>v</kbd>+<kbd>&#8595;</kbd>：进行多行选取，<kbd>esc</kbd>取消选择</p>
+</li>
+<li><p><kbd>shift</kbd> + <kbd><</kbd>：向左移动</p>
+</li>
+<li><p><kbd>shift</kbd> + <kbd>></kbd>：向右移动</p>
+</li>
+<li><p><kbd>?</kbd>：向前搜索</p>
+</li>
+<li><p><kbd>/</kbd>：向后搜索</p>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/24/centos7_python3_install/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Johnny">
+      <meta itemprop="description" content="There is no spoon.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小黑屋">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/03/24/centos7_python3_install/" class="post-title-link" itemprop="url">在CentOS7上安装Python3</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-24 14:34:12" itemprop="dateCreated datePublished" datetime="2020-03-24T14:34:12+08:00">2020-03-24</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -233,15 +382,37 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><center><b>python实现找鞍点</b></center><br/><center>一个矩阵元素的“鞍点”是指该位置上的元素值在该行上最大、在该列上最小。</center></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/02/27/%E7%AC%AC4%E7%AB%A0-22%20%E6%89%BE%E9%9E%8D%E7%82%B9/">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+          <ol>
+<li><h3 id="安装环境基础依赖包"><a href="#安装环境基础依赖包" class="headerlink" title="安装环境基础依赖包"></a>安装环境基础依赖包</h3><p>linux注重系统的安全和稳定，所以必需先安装环境的依赖包才能使用环境。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum -y install gcc*</span><br><span class="line">yum install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel libffi-devel tk-devel sqlite zlib readline openssl libffi</span><br></pre></td></tr></table></figure>
+</li>
+<li><h3 id="新建一个用户，进入用户家目录下，创建Python3文件夹"><a href="#新建一个用户，进入用户家目录下，创建Python3文件夹" class="headerlink" title="新建一个用户，进入用户家目录下，创建Python3文件夹"></a>新建一个用户，进入用户家目录下，创建Python3文件夹</h3><p>防止在对Python环境进行操作时，影响系统环境，故需要新建一个用户，在普通用户下安装Python。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">adduser [user]</span><br><span class="line">su - [user]</span><br><span class="line">cd ~</span><br><span class="line">mkdir Python3</span><br></pre></td></tr></table></figure>
+</li>
+<li><h3 id="利用SecureCRT等工具将Python3包-Gzipped-source-tarball-上传至CentOS并解压"><a href="#利用SecureCRT等工具将Python3包-Gzipped-source-tarball-上传至CentOS并解压" class="headerlink" title="利用SecureCRT等工具将Python3包(Gzipped source tarball)上传至CentOS并解压"></a>利用SecureCRT等工具将Python3包(Gzipped source tarball)上传至CentOS并解压</h3><p><a href="https://www.vandyke.com/download/securecrt/7.0/index.html" target="_blank" rel="noopener">SecureCRT下载地址</a>，<a href="https://www.python.org/downloads/" target="_blank" rel="noopener">Python3下载地址</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mkdir soft</span><br><span class="line">cd soft&#x2F;</span><br><span class="line">[将Python3包上传至此目录]</span><br><span class="line">tar -xvf Python-3.x.x.tgz</span><br></pre></td></tr></table></figure>
+</li>
+<li><h3 id="进入解压后的目录，进行编译"><a href="#进入解压后的目录，进行编译" class="headerlink" title="进入解压后的目录，进行编译"></a>进入解压后的目录，进行编译</h3><p>注意需要带上ssl模块</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd Python-3.x.x</span><br><span class="line">.&#x2F;configure --prefix&#x3D;&quot;&#x2F;home&#x2F;[user]&#x2F;Python3&quot; --with-ssl</span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
+</li>
+<li><h3 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h3><p>需要切换回家目录，并在bashrc的末尾增加配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ~</span><br><span class="line">vi .bashrc</span><br></pre></td></tr></table></figure>
+
+<p>按方向键↓至末尾后，按O，插入以下配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">alias python3&#x3D;&quot;&#x2F;home&#x2F;[user]&#x2F;python3&#x2F;bin&#x2F;python3&quot;</span><br><span class="line">alias pip3&#x3D;&quot;&#x2F;home&#x2F;[user]&#x2F;python3&#x2F;bin&#x2F;pip3&quot;</span><br></pre></td></tr></table></figure>
+
+<p>输入完成后按ESC，输入:wq保存并退出</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:wq</span><br></pre></td></tr></table></figure>
+</li>
+<li><h3 id="重新加载bashrc文件"><a href="#重新加载bashrc文件" class="headerlink" title="重新加载bashrc文件"></a>重新加载bashrc文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source .bashrc</span><br></pre></td></tr></table></figure>
+</li>
+<li><h3 id="配置完成"><a href="#配置完成" class="headerlink" title="配置完成"></a>配置完成</h3><p>注意运行的命令是python3而不是python（因为linux系统自带python2，使用python默认运行的是python2）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">python3</span><br><span class="line">Python 3.7.7 (default, Mar 30 2020, 20:52:37) </span><br><span class="line">[GCC 4.8.5 20150623 (Red Hat 4.8.5-39)] on linux</span><br><span class="line">Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+
       
     </div>
 
@@ -260,7 +431,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/27/Python%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/16/html/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -274,7 +445,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2020/02/27/Python%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/" class="post-title-link" itemprop="url">Python字符串常用方法</a>
+            <a href="/2020/03/16/html/" class="post-title-link" itemprop="url">html笔记</a>
         </h1>
 
         <div class="post-meta">
@@ -284,22 +455,15 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-02-27 15:43:33" itemprop="dateCreated datePublished" datetime="2020-02-27T15:43:33+08:00">2020-02-27</time>
+              <time title="创建时间：2020-03-16 18:48:36" itemprop="dateCreated datePublished" datetime="2020-03-16T18:48:36+08:00">2020-03-16</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-02-29 00:12:35" itemprop="dateModified" datetime="2020-02-29T00:12:35+08:00">2020-02-29</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a>
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a>
                 </span>
             </span>
 
@@ -309,14 +473,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>353</span>
+              <span>1.7k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>3 分钟</span>
             </span>
 
         </div>
@@ -328,15 +492,64 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><center>记录了一些Python中字符串的常用方法</center></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/02/27/Python%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+          <h3 id="什么是HTML"><a href="#什么是HTML" class="headerlink" title="什么是HTML"></a>什么是HTML</h3><p>HTML全称Hyper Text Markup Language(超文本标记语言)</p>
+<h4 id="HTML文件结构"><a href="#HTML文件结构" class="headerlink" title="HTML文件结构"></a>HTML文件结构</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span> // 头部文件</span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>页面标题<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        正文</span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="常用标签"><a href="#常用标签" class="headerlink" title="常用标签"></a>常用标签</h3><ol>
+<li><h4 id="字体标签"><a href="#字体标签" class="headerlink" title="字体标签"></a>字体标签</h4><p>HTML4支持该语法，但不赞成使用该标签;<br>HTML5不支持该标签；部分较老网站仍使用该标签。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">font</span>&gt;</span>......<span class="tag">&lt;/<span class="name">font</span>&gt;</span>  // 规定文本的字体、字体尺寸、字体颜色</span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">size</span>=<span class="string">"3"</span> <span class="attr">color</span>=<span class="string">"red"</span> <span class="attr">face</span>=<span class="string">"楷体"</span>&gt;</span>我是红色、楷体<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><h4 id="段落标签"><a href="#段落标签" class="headerlink" title="段落标签"></a>段落标签</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>......<span class="tag">&lt;/<span class="name">p</span>&gt;</span>  // 定义一个段落</span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>我是段落<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><h4 id="注释标签"><a href="#注释标签" class="headerlink" title="注释标签"></a>注释标签</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--......--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--我是注释--&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><h4 id="标题标签"><a href="#标题标签" class="headerlink" title="标题标签"></a>标题标签</h4><p>尽量靠近在html中的body标签，越近越好，以便让搜索引擎最快的领略主题。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>一级标题<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>二级标题<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h3</span>&gt;</span>三级标题<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">// 4.5.6不常用</span><br><span class="line"><span class="tag">&lt;<span class="name">h4</span>&gt;</span>四级标题<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h5</span>&gt;</span>五级标题<span class="tag">&lt;/<span class="name">h5</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h6</span>&gt;</span>六级标题<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><h4 id="图片标签"><a href="#图片标签" class="headerlink" title="图片标签"></a>图片标签</h4><p>常用属性：src、alt、height、width</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"..."</span> <span class="attr">alt</span>=<span class="string">"..."</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><h4 id="超链接标签"><a href="#超链接标签" class="headerlink" title="超链接标签"></a>超链接标签</h4><p>超链接可以是一个字，一个词或一组词，也可以是一幅图像，可以点击这些内容来跳转到新的文档或者当前文档中的某个部分。</p>
+<p>a标签的target属性：</p>
+<table>
+<thead>
+<tr>
+<th align="center">标签</th>
+<th align="center">格式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">_blank</td>
+<td align="center">在新打开、未命名的窗口打开链接</td>
+</tr>
+<tr>
+<td align="center">_parent</td>
+<td align="center">在父窗口打开链接</td>
+</tr>
+<tr>
+<td align="center">_self</td>
+<td align="center">在当前窗口打开链接</td>
+</tr>
+<tr>
+<td align="center">_top</td>
+<td align="center">_top目标将会清除所有被包含的fram框架</td>
+</tr>
+</tbody></table>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span>&gt;</span>......<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"another page.html"</span>&gt;</span>打开另一个页面<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><h4 id="锚点标签"><a href="#锚点标签" class="headerlink" title="锚点标签"></a>锚点标签</h4><p>同一个文档中创建指向该锚（位置）的链接，必须先定义再使用。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">name</span>=<span class="string">"num-1"</span>&gt;</span>  // 用name属性定义锚点名称</span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>我是内容<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#num-1"</span>&gt;</span>锚点1<span class="tag">&lt;/<span class="name">a</span>&gt;</span>  // #+锚名</span><br></pre></td></tr></table></figure>
+</li>
+<li><h4 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h4><p>此列项目使用粗体圆点进行标记，列表项目内部可以使用段落、换行符、图片、链接以及其他列表等元素。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>我的文件<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>我的图片<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"></span><br><span class="line">// 有序列表标签为<span class="tag">&lt;<span class="name">ol</span>&gt;</span>,项目使用数字标记</span><br><span class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>我的文件<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>我的图片<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><h4 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h4><p>用于表格、行、列、宽度、边框的制作。</p>
+<p>属性：tr(行)、td(列)、border(设置边框)、width(表格宽度)、bgcolor(表格背景)、align(表格在文档中的对齐方式)、valign(三种垂直对齐方式)</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>name<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>gender<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>birthday<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>yang<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>male<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>1996-01-01<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>合并行列：colspan、rowspan</p>
+</li>
+</ol>
+
       
     </div>
 
@@ -355,7 +568,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/23/%E5%88%A9%E7%94%A8hexo-git%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/15/MongoDB/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -369,7 +582,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2019/09/23/%E5%88%A9%E7%94%A8hexo-git%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">利用hexo+git快速搭建博客</a>
+            <a href="/2020/03/15/MongoDB/" class="post-title-link" itemprop="url">MongoDB</a>
         </h1>
 
         <div class="post-meta">
@@ -379,22 +592,15 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2019-09-23 19:40:40" itemprop="dateCreated datePublished" datetime="2019-09-23T19:40:40+08:00">2019-09-23</time>
+              <time title="创建时间：2020-03-15 17:33:23" itemprop="dateCreated datePublished" datetime="2020-03-15T17:33:23+08:00">2020-03-15</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-02-29 00:12:05" itemprop="dateModified" datetime="2020-02-29T00:12:05+08:00">2020-02-29</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a>
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a>
                 </span>
             </span>
 
@@ -404,7 +610,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>164</span>
+              <span>343</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -423,9 +629,106 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>　　<a href="http://www.cylong.com/blog/2016/04/19/hexo-git/" target="_blank" rel="noopener">参考这篇文章</a>花了一个下午研究怎么搭一个简单的静态博客，因为版本差异，中间也遇到了一些小问题，耗费了一些不必要的时间。</p>
-<p>　　<strong>问题1：git组件需要手动更新</strong><br>　　根据指引输入对应代码即可解决（阅读能力很重要）。</p>
-<p>　　<strong>问题2：设置头像时文件名存储错误</strong><br>　　将avatar打成了avtar，浪费了一个小时搜索解决方案，以后程序出错应该第一时间排除这种低级错误。</p>
+          <ol>
+<li><p>查询操作</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">db.[table].find()</span><br><span class="line">db.[table].find(&#123;name: &quot;张三&quot;, age:15&#125;)           &#x2F;&#x2F; 查询条件放&#123;&#125;里</span><br><span class="line">db.[table].find(&#123;gender: &quot;女&quot;, age: &#123;$gte: 20&#125;&#125;)  &#x2F;&#x2F; &#123;$gte:20&#125; --&gt; 大于等于20</span><br><span class="line">db.[table].findOne()  # 返回一条记录</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>增加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.[table].update(&#123;name: &quot;张三&quot;&#125;, &#123;city: &quot;Beijing&quot;&#125;)</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/13/mysql%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Johnny">
+      <meta itemprop="description" content="There is no spoon.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小黑屋">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/03/13/mysql%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">mysql笔记</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-13 09:53:18" itemprop="dateCreated datePublished" datetime="2020-03-13T09:53:18+08:00">2020-03-13</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>387</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>2020-03-10 13:31:51</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 创建表方法</span><br><span class="line">CREATE TABLE ***** (</span><br><span class="line">    列名1  数据类型  [约束条件]  [注释]</span><br><span class="line">    列名2  数据类型  [约束条件]  [注释]</span><br><span class="line">)  </span><br><span class="line"></span><br><span class="line"># 复制表的两种方法</span><br><span class="line">CREATE TABLE **** AS ****    # 复制表结构以及数据</span><br><span class="line">CREATE TABLE **** LIKE ****  # 复制表结构</span><br></pre></td></tr></table></figure>
+
+
+
+<p>2020-03-13 09:56:58 </p>
+<h5 id="SQL语言分类"><a href="#SQL语言分类" class="headerlink" title="SQL语言分类"></a>SQL语言分类</h5><h6 id="DML-Data-Manipulation-Language-数据操作语言"><a href="#DML-Data-Manipulation-Language-数据操作语言" class="headerlink" title="DML: Data Manipulation Language 数据操作语言"></a><strong>DML: Data Manipulation Language</strong> 数据操作语言</h6><p>DML 操作是指对数据库中表记录的操作，主要包括表记录的<strong>插入（insert）</strong>、<strong>更新（update）</strong>、<strong>删除（delete）</strong>和<strong>查询（select）</strong>，是开发人员日常使用最频繁的操作。</p>
+<h6 id="DCL-Data-Control-Language-数据控制语言"><a href="#DCL-Data-Control-Language-数据控制语言" class="headerlink" title="DCL: Data Control Language 数据控制语言"></a>DCL: Data Control Language 数据控制语言</h6><p>创建用户、分配权限、管理事务</p>
+<h6 id="DDL-Data-Define-Language-数据定义语言"><a href="#DDL-Data-Define-Language-数据定义语言" class="headerlink" title="DDL: Data Define Language 数据定义语言"></a>DDL: Data Define Language 数据定义语言</h6><p>管理逻辑库、数据表、视图、索引等</p>
 
       
     </div>
@@ -444,6 +747,9 @@
   </div>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
 
 
 
@@ -510,7 +816,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">9</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -523,7 +829,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -557,7 +863,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">2k</span>
+    <span title="站点总字数">7k</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动
   </div>
